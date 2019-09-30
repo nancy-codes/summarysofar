@@ -1,0 +1,108 @@
+@import "native.css";
+
+a { color: inherit; }
+a:hover { text-decoration: none; }
+
+.til {
+  font-size: 2.2rem;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.post-til {
+  margin-right: 50%;
+  text-align: justify;
+}
+
+.project-name {
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.gem-grid {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax((200px, 1fr)));
+}
+
+.gem-name {
+  font-size: 2.0rem;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.gem-img {
+  width: 50%;
+  height: 50%;
+  /* -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.p-author {
+  color: #505050;
+  font-style: italic;
+}
+
+.gem-container {
+  display: block;
+  margin-right: 50%;
+}
+
+.book-post {
+  margin-top: 2em;
+  font-size: 20px;
+  font-weight: 250;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.page-text {
+  line-height: 1.8;
+}
+
+pre, code {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #fcfcff;
+  margin: 0;
+  font-size: 15px;
+}
+
+pre {
+  overflow-y: scroll;
+  word-wrap: normal;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.highlight {
+  margin: 1em 0;
+}
+
+pre.highlight {
+  padding: 1em;
+}
+
+.lineno {
+  padding: .5em;
+}
+
+.gutter, .lineno {
+  background-color: #CAEBF2;
+}
+
+td.code {
+  padding: 1em .5em;
+}

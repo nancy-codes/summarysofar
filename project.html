@@ -1,0 +1,18 @@
+---
+layout: default
+title: Projects
+---
+<h1>Projects</h1>
+<br>
+<div class="card-group">
+  {% for project in site.projects %}
+    <div class="card">
+      <a href="{{ project.link }}"><img class="card-img-top" src="{{ project.image }}" alt="project_image"></a>
+      <div class="card-body">
+        <h5 class="card-title"><a href="{{ project.url }}" class="project-name">{{ project.title }}</a></h5>
+        <p class="card-text">{{ project.excerpt }}</p>
+        <p class="card-text"><small class="text-muted">{{ project.description}}</small></p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
