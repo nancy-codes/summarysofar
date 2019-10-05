@@ -6,15 +6,13 @@ layout: default
 <br>
 <ul class="post-list">
   {% for post in page.posts %}
-    <div class="row">
-      <div class="col-2">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </div>
-
-      <div class="col-sm">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </div>
-        <br><br />
-    </div>
+    <p class="post-title">
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        <b>{{ post.title | escape }}</b>
+      </a>
+    </p>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta post-date">{{ post.date | date: date_format }}</span>
+    <br /><br />
   {% endfor %}
 </ul>
