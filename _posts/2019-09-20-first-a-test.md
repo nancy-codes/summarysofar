@@ -2,6 +2,9 @@
 layout: post
 title: First, a test
 date: 2019-09-20 17:37 -0600
+tags:
+- TDD
+- Ruby
 ---
 The first principle that I was told regarding software development was this: 'Always, always, always, write tests first'. In short, 'AAA WTF'!
 

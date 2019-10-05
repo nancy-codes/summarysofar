@@ -68,6 +68,7 @@ a:hover { text-decoration: none; }
 
 .page-text {
   line-height: 1.8;
+  text-align: justify;
 }
 
 pre, code {

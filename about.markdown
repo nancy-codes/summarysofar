@@ -7,6 +7,4 @@ permalink: /about/
 
 
 <br>
-Life is not all about programming, but it can make life a little easier. As a developer, I can turn a string of ideas into a functional app, automate repetitive tasks, and help others solve their problems. A development process, however, is not glamorous at all. It requires rigorous testing, incremental improvements, and continuous debugging to make something work. It will be a challenging journey, but I believe the reward outweighs the efforts. It is rather a privilege to be part of this pipeline from which practical solutions emerge.
-
-As a junior developer, I have just begun to explore the tech community. I am eager to find out what drives the current tech scene, find collaborators to work on future projects, and grow continually as a lifelong learner. To pay it forward in the tech community, I would like to start out by sharing TIL's through this blog as well as helping young students learn to code.
+Hi! My name is Nancy Lee. I am a software developer, mostly working in Ruby, Rails and Python. I care about simple design patterns, test-driven development, and robust documentation. I am also keen on exploring machine learning, neural nets and other cool projects. In a screen-free world, I love to walk, write, and take pictures of rare and exotic plants.
