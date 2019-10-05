@@ -9,16 +9,17 @@ layout: default
 
   {{ content }}
 
-  <h3 class='til'>Today I Learned</h3>
-  <br />
+
   <div class="container">
+    <h3 class='til'>Today I Learned</h3>
+    <br />
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
         <p class="post-title">
           <a class="post-link" href="{{ post.url | relative_url }}">
-            <b>{{ post.title | escape }}</b>
+            {{ post.title | escape }}
           </a>
         </p>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
