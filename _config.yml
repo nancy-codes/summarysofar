@@ -23,7 +23,7 @@ email: nancylees303@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Learn by iterative writing
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "www.summarysofar.com" # the base hostname & protocol for your site, e.g. http://example.com
 disqus:
   shortname: summarysofar
 # twitter_username:
