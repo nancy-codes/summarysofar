@@ -8,6 +8,7 @@ image: "https://user-images.githubusercontent.com/24424825/65654724-fbae2480-dfd
 [Visit website](https://radiant-falls-14500.herokuapp.com/)
 
 <hr>
+
 #### Description
 In this project, my partner and I built a fictitious e-commerce platform in Rails. Through the project, we demonstrated our firm grasp of the following concepts:
 

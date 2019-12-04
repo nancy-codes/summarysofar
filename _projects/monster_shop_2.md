@@ -8,5 +8,6 @@ image: "https://user-images.githubusercontent.com/24424825/65654764-1ed8d400-dfd
 [Visit website](https://whispering-reef-00114.herokuapp.com/)
 
 <hr>
+
 #### Description
 This project is an extension of "Monster Shop" project, in which additional functionalities have been implemented. They include "Users can have many addresses" (so that they can choose an address when checking out), "Merchants can generate coupon codes" (with certain constraints), and so forth.
