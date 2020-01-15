@@ -15,7 +15,7 @@ Sadly, the flashcards did not exist in my coding journey. It didn't occur to me 
 
 To fix this issue, I decided to build a simple node API to systemize a learning process. The API would consist of two endpoints (posting a new card and getting all cards), like so:
 
-![dev_lingo](https://user-images.githubusercontent.com/24424825/72402400-62815600-370c-11ea-80b7-2fb315124db4.png)
+<img src="https://user-images.githubusercontent.com/24424825/72402400-62815600-370c-11ea-80b7-2fb315124db4.png" width="80%" style="display:block; margin-left:auto; margin-right:auto;">
 
 But the challenging part was connecting an HTML form and express routes. I ran into an issue in which a post request would return a response body that is empty (aka, { }). Somehow the form input didn't get passed securely from a controller action to the post route. To add to the confusion, the same thing worked fine in Postman.
 
