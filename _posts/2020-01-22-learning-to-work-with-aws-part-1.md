@@ -21,6 +21,6 @@ Topics on S3, CloudFront, Relational Database Service (RDS), and Lambda will be 
 
 
 #### References
-- A comprehensive article on AWS certifications by freecodecamp: https://www.freecodecamp.org/news/awscertified-challenge-free-path-aws-cloud-certifications/
-- Intro to AWS by codeanalogies: https://dev.to/kbk0125/amazon-web-services-aws-explained-by-operating-abrewery-2j0
-- Prepping for AWS Certified Cloud Practitioner exam: http://www.helenanderson.co.nz/aws-cloud-practitioner/
+- [A comprehensive article on AWS certifications by freecodecamp](https://www.freecodecamp.org/news/awscertified-challenge-free-path-aws-cloud-certifications/)
+- [Intro to AWS by codeanalogies](https://dev.to/kbk0125/amazon-web-services-aws-explained-by-operating-abrewery-2j0)
+- [Prepping for AWS Certified Cloud Practitioner exam](http://www.helenanderson.co.nz/aws-cloud-practitioner/)
