@@ -10,7 +10,7 @@
     </div>
 
     {% include footer.html %}
-    {% if jekyll.environment == 'production' %}
+    {% if jekyll.environment == 'production' and page.analytics != false %}
       {% include analytics.html %}
     {% endif %}
   </body>
