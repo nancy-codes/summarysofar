@@ -1,0 +1,599 @@
+---
+title: CV
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nancy Lee</title>
+    <meta
+      name="description"
+      content="Think programmatically, express with elegance, and support developers with strong documentation."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+    />
+    <style>
+      :root {
+        /* Colors */
+        --primaryColor: #212529;
+        --secondaryColor: #95a5a6;
+        --accentColor: #f1c40f;
+        --linkColor: #2ecc71;
+        --mutedColor: #f4f6f6;
+
+        /* Typography */
+        --ratio: 1.25;
+        --scale0: 1rem;
+        --scale1: calc(var(--scale0) * var(--ratio));
+        --scale2: calc(var(--scale1) * var(--ratio));
+        --scale3: calc(var(--scale2) * var(--ratio));
+        --scale4: calc(var(--scale3) * var(--ratio));
+        --scale5: calc(var(--scale4) * var(--ratio));
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 14px;
+      }
+
+      body {
+        color: var(--primaryColor);
+        display: grid;
+        font: 1em/1.5 Lato, sans-serif;
+        gap: 2em;
+        grid-template-columns:
+          [full-start]
+          1fr
+          [main-start side-start]
+          minmax(min-content, 12em)
+          [side-end content-start]
+          minmax(min-content, 36em)
+          [main-end content-end]
+          1fr
+          [full-end];
+        grid-template-rows: auto [content] 0;
+        margin-bottom: 4em;
+      }
+
+      body::before {
+        content: "";
+        grid-column: full;
+        grid-row: content;
+      }
+
+      ol,
+      ul {
+        padding-left: 1em;
+      }
+
+      li + li {
+        margin-top: 0.2em;
+      }
+
+      li::marker {
+        color: var(--mutedColor);
+      }
+
+      a {
+        color: var(--linkColor);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      a:focus,
+      a:hover {
+        color: var(--accentColor);
+      }
+
+      h1,
+      h2,
+      h3,
+      h5 {
+        font-weight: normal;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: var(--scale5);
+      }
+
+      h2 {
+        color: var(--secondaryColor);
+        font-size: var(--scale4);
+      }
+
+      h3 {
+        color: var(--accentColor);
+        font-size: var(--scale3);
+        grid-column: side;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        font-size: var(--scale2);
+      }
+
+      h5 {
+        font-size: var(--scale1);
+      }
+
+      h6 {
+        font-size: var(--scale0);
+      }
+
+      blockquote {
+        border-left: 0.2em solid var(--mutedColor);
+        padding-left: 1em;
+      }
+
+      cite {
+        color: var(--secondaryColor);
+        font-style: inherit;
+      }
+
+      cite::before {
+        content: "— ";
+      }
+
+      .masthead {
+        background: var(--mutedColor);
+        display: inherit;
+        gap: inherit;
+        grid-column: full;
+        grid-template-columns: inherit;
+        padding: 4em 0;
+        row-gap: 0;
+      }
+
+      .masthead > *,
+      section {
+        grid-column: main;
+      }
+
+      article > * + *,
+      blockquote > * + * {
+        margin-top: 0.6em;
+      }
+
+      .stack {
+        display: grid;
+        gap: 1.5em;
+      }
+
+      .grid-list {
+        display: grid;
+        gap: 1em;
+      }
+
+      .spaced-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .spaced-list:first-child::before {
+        border-bottom: 1px solid var(--mutedColor);
+        content: "";
+        flex-grow: 1;
+        margin: 0 1em;
+        order: 1;
+      }
+
+      .spaced-list > :nth-child(2) {
+        order: 2;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+      }
+
+      .tag-list > li {
+        background: var(--mutedColor);
+        margin: 0 0.2em 0.2em 0;
+        padding: 0.2em 0.6em;
+      }
+
+      @media print, (min-width: 48em) {
+        h3 {
+          text-align: right;
+          margin-bottom: inherit;
+        }
+
+        .masthead > *,
+        section {
+          grid-column: content;
+        }
+
+        section {
+          display: contents;
+        }
+
+        .grid-list {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="masthead">
+      <h1>Nancy Lee</h1>
+      <h2>Fullstack Engineer</h2>
+    </header>
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="grid-list">
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:saeryounglee@gmail.com">saeryounglee@gmail.com</a>
+        </div>
+        <div>
+          <h4>Phone</h4>
+          (+82) 10-6621-6362
+        </div>
+        <div>
+          <h4>Website</h4>
+          <a href="https://www.summarysofar.com">www.summarysofar.com</a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h3>About</h3>
+      <article>
+        <p>
+          Think programmatically, express with elegance, and support developers
+          with strong documentation.
+        </p>
+      </article>
+    </section>
+    <section id="profiles">
+      <h3>Profiles</h3>
+      <div class="grid-list">
+        <div>
+          <h4>LinkedIn</h4>
+          <a href="https://linkedin.com/in/nancylee713">nancylee713</a>
+        </div>
+        <div>
+          <h4>GitHub</h4>
+          <a href="https://github.com/nancylee713">nancylee713</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h3>Work</h3>
+      <div class="stack">
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>LOVO</h4>
+              <span>
+                <time datetime="2020-12-21">Dec 2020</time> – Present
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>Fullstack Engineer</strong>
+              <a href="https://lovo.io">lovo.io</a>
+            </div>
+          </header>
+          <p>
+            LOVO is a voice-over and voice-cloning platform startup, powered by
+            machine-learning based models.
+          </p>
+          <h5>Highlights</h5>
+          <ul>
+            <li>
+              Built a Nest-based backend server in Custom voiceskin module
+              development
+            </li>
+            <li>
+              Re-designed UI components within the internal management system
+              with react-admin and antd library
+            </li>
+            <li>
+              Added Stripe-based components to API client and server for
+              subscription/invoice management
+            </li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Angelswing</h4>
+              <span>
+                <time datetime="2020-03-16">Mar 2020</time> –
+                <time datetime="2020-10-08">Oct 2020</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>Backend Engineer</strong>
+              <a href="https://angelswing.io">angelswing.io</a>
+            </div>
+          </header>
+          <p>
+            Angelswing provides a 2D/3D visualization of construction job sites
+            to support drone data processing.
+          </p>
+          <h5>Highlights</h5>
+          <ul>
+            <li>
+              Built and maintained RESTful APIs and internal admin system built
+              with Ruby on Rails
+            </li>
+            <li>
+              Organized documentation for the engineering team through Jira and
+              Confluence
+            </li>
+            <li>Refined existing tests to improve test coverage with RSpec</li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Sebbit English</h4>
+              <span>
+                <time datetime="2015-07-05">Jul 2015</time> – Present
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>Writing Tutor &amp; Engineer</strong>
+              <a href="https://sebbitenglish.herokuapp.com"
+                >sebbitenglish.herokuapp.com</a
+              >
+            </div>
+          </header>
+          <p>
+            An online writing platform to help both instructors and students
+            manage their writing workflow.
+          </p>
+          <h5>Highlights</h5>
+          <ul>
+            <li>
+              Built the application with Ruby on Rails, PostgreSQL, and Chart.js
+              library
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="education">
+      <h3>Education</h3>
+      <div class="stack">
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Turing School of Software &amp; Design</h4>
+              <span>
+                <time datetime="2019-06-24">Jun 2019</time> –
+                <time datetime="2020-01-17">Jan 2020</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>Software Development</strong>
+              <a href="https://turing.io">turing.io</a>
+            </div>
+          </header>
+          <p>Backend Engineering</p>
+          <h5>Courses</h5>
+          <ul>
+            <li>Object Oriented Programming with Ruby</li>
+            <li>Web Applications with Ruby</li>
+            <li>Professional Rails Applications</li>
+            <li>Client-Side Development with JavaScript</li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>University College London</h4>
+              <span>
+                <time datetime="2016-09">Sep 2016</time> –
+                <time datetime="2017-09">Sep 2017</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>Neuroscience and Communication</strong>
+              <a href="https://www.ucl.ac.uk">www.ucl.ac.uk</a>
+            </div>
+          </header>
+          <p>Master of Science</p>
+          <h5>Courses</h5>
+          <ul>
+            <li>Introduction to the Brain and Imaging the Brain</li>
+            <li>Research Methods: Principles, Skills and Applications</li>
+            <li>Syntax I</li>
+            <li>Neuroscience of Language</li>
+            <li>Developmental Language Disorders and Cognitive Neuroscience</li>
+            <li>Introduction to Speech Sciences</li>
+            <li>The Neurobiology of Speech Procressing</li>
+            <li>
+              Research Project: Deep neural network architecture for speech
+              prediction
+            </li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Cornell University</h4>
+              <span>
+                <time datetime="2011-08">Aug 2011</time> –
+                <time datetime="2014-05">May 2014</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <strong>Biological Sciences</strong>
+              <a href="https://www.cornell.edu">www.cornell.edu</a>
+            </div>
+          </header>
+          <p>Bachelor</p>
+        </article>
+      </div>
+    </section>
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="stack">
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Daily Log</h4>
+              <span>
+                <time datetime="2021-03-20">Mar 2021</time> –
+                <time datetime="2021-04-20">Apr 2021</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <span>
+                <strong>Developer</strong>
+              </span>
+              <a href="https://dailyloggroup.com/">dailyloggroup.com</a>
+            </div>
+          </header>
+          <p>
+            A platform for writers to manage and share novel expressions and
+            personal essays
+          </p>
+          <h5>Highlights</h5>
+          <ul>
+            <li>Frontend with React, Backend with Nest</li>
+            <li>Manage authentication with auth0</li>
+            <li>Optimized for online writing classes</li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <div class="spaced-list">
+              <h4>Storytellers</h4>
+              <span>
+                <time datetime="2021-01-25">Jan 2021</time> –
+                <time datetime="2021-01-30">Jan 2021</time>
+              </span>
+            </div>
+            <div class="spaced-list">
+              <span>
+                <strong>Developer, Designer</strong>
+              </span>
+              <a href="https://sebbitstories.herokuapp.com/"
+                >sebbitstories.herokuapp.com</a
+              >
+            </div>
+          </header>
+          <p>A collection of mini audiobooks created by EFL student writers</p>
+          <h5>Highlights</h5>
+          <ul>
+            <li>Built with React and Semantic UI</li>
+            <li>Story cards with audio autoplay and sliders</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="skills">
+      <h3>Skills</h3>
+      <div class="grid-list">
+        <div>
+          <h4>Languages</h4>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Frameworks</h4>
+          <ul class="tag-list">
+            <li>Express</li>
+            <li>Nest</li>
+            <li>React</li>
+            <li>Flask</li>
+            <li>Django</li>
+            <li>Ruby on Rails</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Databases</h4>
+          <ul class="tag-list">
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Redis</li>
+          </ul>
+        </div>
+        <div>
+          <h4>AWS</h4>
+          <ul class="tag-list">
+            <li>EC2</li>
+            <li>S3</li>
+            <li>RDS</li>
+            <li>SQS</li>
+            <li>Lambda</li>
+            <li>IAM</li>
+            <li>CloudWatch</li>
+            <li>EBS</li>
+            <li>CodeDeploy</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Containers</h4>
+          <ul class="tag-list">
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Operating Systems</h4>
+          <ul class="tag-list">
+            <li>Unix</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <h3>Languages</h3>
+      <div class="grid-list">
+        <div>
+          <h4>English</h4>
+          Bilingual proficiency
+        </div>
+        <div>
+          <h4>Korean</h4>
+          Native
+        </div>
+      </div>
+    </section>
+    <section id="interests">
+      <h3>Interests</h3>
+      <div class="grid-list">
+        <div>
+          <h4>Hiking</h4>
+          <ul class="tag-list">
+            <li>Mountains</li>
+            <li>National Parks</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Photography</h4>
+          <ul class="tag-list">
+            <li>Landscape</li>
+            <li>Botanical</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

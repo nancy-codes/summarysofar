@@ -1,15 +1,17 @@
 ---
 layout: project
-title:  "Tomato Time"
+title: "Tomato Time"
 description: "Group Project"
 link: "https://github.com/joshsherwood1/tomato_time_project"
-image: "https://alumni.turing.io/sites/default/files/styles/project_screenshot/public/project_screenshots/tomato_time_final.png?itok=wVymuVTf"
+image: "https://user-images.githubusercontent.com/24424825/67992207-71726500-fc01-11e9-8eea-285f03f88de6.png"
 ---
+
 [Visit website](https://peaceful-chamber-62417.herokuapp.com/)
 
 <hr>
 
 #### Description
+
 In this group project, my team built an interactive trivia app with Rails. Users can make customized games by specifying the category, level of difficulty, and amount of questions for each game. The following list describes what we were able to accomplish in this project:
 
 - Set up Google OAuth 2.0 for user authentication
